@@ -60,5 +60,17 @@ public class Main {
         byte myNewByteValue = (byte) (myMinByteValue / 2);
 
 //        without (byte) there - java work with this like Integer by  default, if we put there (byte), java treat with this value following the parentheses' byte parentheses as a byte.
+
+        byte byteValue = 10;
+        short shortValue = 20;
+        int intValue = 50;
+
+        long longTotal = 50000L + 10l * (byteValue + shortValue + intValue);
+        System.out.println(longTotal);
+
+        short shortTotal = (short) (1000 + 10 *
+                (byteValue + shortValue + intValue));
+
+        System.out.println(shortTotal);
     }
 }
